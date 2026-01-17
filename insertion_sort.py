@@ -11,3 +11,11 @@ def insertion_sort_desc(arr):
             j -= 1
         arr[j + 1] = key
     return arr
+
+
+if __name__ == "__main__":
+    # Test the insertion sort (descending order)
+    test_array = [5, 2, 8, 1, 9, 3, 7, 4, 6]
+    print(f"Original array: {test_array}")
+    sorted_array = insertion_sort_desc(test_array.copy())
+    print(f"Sorted (descending): {sorted_array}")
